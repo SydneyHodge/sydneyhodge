@@ -32,6 +32,8 @@ gem 'autoprefixer-rails'
 # Compass gem for Flexbox.
 gem 'compass-rails', github: 'Compass/compass-rails', branch: 'master' 
 
+gem 'puma'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
