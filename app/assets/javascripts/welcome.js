@@ -1,9 +1,13 @@
 $(document).ready(function() {
-	$("#normal-delay").fadeIn(2500);
-	$("#long-delay").fadeIn(5000);
-	$("#xlong-delay").fadeIn(5500);
-	$("#xxlong-delay").fadeIn(6000);
-	$("#xxxlong-delay").fadeIn(6500);
+	$("#normal-delay").fadeIn(2500, function() {
+		$("#long-delay").fadeIn(2500, function() {
+			$("#xlong-delay").fadeIn(1500, function() {
+				$("#xxlong-delay").fadeIn(1500, function() {
+					$("#xxxlong-delay").fadeIn(1500);					
+				});
+			});
+		});
+	});
 
    $('.delay').mouseenter(function() {
        $(this).animate({
