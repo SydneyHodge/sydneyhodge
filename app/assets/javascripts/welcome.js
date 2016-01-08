@@ -4,4 +4,16 @@ $(document).ready(function() {
 	$("#xlong-delay").fadeIn(5500);
 	$("#xxlong-delay").fadeIn(6000);
 	$("#xxxlong-delay").fadeIn(6500);
+
+   $('.delay').mouseenter(function() {
+       $(this).animate({
+           height: '+=10px'
+       });
+   });
+
+   $('.delay').mouseleave(function() {
+       $(this).animate({
+           height: '-=10px'
+       });
+   });
 });
