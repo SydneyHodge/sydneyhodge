@@ -48,6 +48,16 @@ $white: #FFFFFF;
 		.delay {
 			display: none;
 		}
+
+		#long-delay, #xlong-delay, #xxlong-delay, #xxxlong-delay {
+			font-family: tk-learning-curve;
+			font-style: italic;
+			font-weight: 100;
+		}
+
+		#normal-delay {
+			font-weight: 200;
+		}
 	}
 }
 
