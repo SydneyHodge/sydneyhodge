@@ -3,31 +3,31 @@
 @import "compass";
 @import "welcome";
 
-$white: #FFFFFF;
+$gray: #666666;
+$light_gray: #CECDCC;
 $off_black: #333333;
-$silver: #F0F1F5;
-
-html, body {
-	height: 100%;
-}
-
-body {
-
-background: #232526; /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #232526 , #414345); /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #232526 , #414345); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */	color: $white;
-	font-family:'helvetica';
-	position: relative;
-}
+$off_white: #FAFAFA;
+$white: #FFFFFF;
 
 ::selection {
-	background-color: $silver;
+	background-color: $gray;
 	color: $white;
 }
 
 ::-moz-selection { 
-	background-color: $silver;
+	background-color: $gray;
 	color: $white;
+}
+
+html, body {
+	height: 100%;
+	overflow: hidden;
+}
+
+body {
+	background-color: $off_white;
+	color: $off_white;
+	font-family: 'Roboto', 'helvetica';
 }
 
 #wrapper{
@@ -37,9 +37,9 @@ background: linear-gradient(to left, #232526 , #414345); /* W3C, IE 10+/ Edge, F
 	display: -webkit-flex;
 	display:         flex;
 
-	@include flex-direction(column);
-	min-height: 100vh;
-	position: relative;
+	min-width: 100%;
+	width: auto !important;
+	width: 100%;
 
-	overflow-x: hidden;
+	height: 100%;
 }

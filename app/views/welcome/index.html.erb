@@ -1,34 +1,66 @@
-<div id="row-1">
-	<div class="col-1">
+<div id="left-content">
+	<h1 class="name"> Sydney Hodge </h1>
+
+	<h3 class="menu-item" id="about"> ABOUT </h3>
+	<h3 class="menu-item" id="projects"> PROJECTS </h3>
+	<h3 class="menu-item" id="music"> MUSIC </h3>
+	<h3 class="menu-item" id="contact"> CONTACT </h3>
+	<h3 class="menu-item" id="social"> SOCIAL MEDIA </h3>
+
+	<div id="additional-info" class="menu-info">
+		<hr class="info-hr">
 	</div>
-	<div class="col-2">
+
+	<div id="left-responses">
+		<p class="about-info">
+			Turning questions into ideas, and making ideas come to life.
+		</p>
+
+		<p class="projects-info">
+			Here are some of my latest projects.
+		</p>
+
+		<p class="music-info">
+			Listening to music is one of my favorite pastimes. Here are some of the artists and songs I've been listening to as of late.
+		</p>
+
+		<p class="contact-info">
+			Let's work together!
+		</p>
+
+		<p class="social-info">
+			See what I'm saying on social media.
+		</p>
 	</div>
-	<div class="col-3">
-	</div>
+
+	<footer >
+		<p class="text-muted"> a Sydney Hodge Project | 2016</p>
+	</footer>
 </div>
 
-<div id="row-2">
-	<div class="col-1">
+<div id="right-content">
+	<div class="content">
 	</div>
-	<div class="col-2">
-		<div class="content">
-			<span class="delay" id="normal-delay"> coming </span>
-			<span class="delay" id="long-delay">&nbsp;soon</span>
-			<span class="delay" id="xlong-delay">.</span>
-			<span class="delay" id="xxlong-delay">.</span>
-			<span class="delay" id="xxxlong-delay">.</span>
+
+	<div id="right-responses">
+		<div class="about-info">
+			<%= render "about" %>
 		</div>
-	</div>
-	<div class="col-3">
-	</div>
-</div>
 
-<div id="row-3">
-	<div class="col-1">
-	</div>
-	<div class="col-2" id="copyright">
-		<p> &copy; 2016 Sydney Hodge </p>
-	</div>
-	<div class="col-3">
+		<div class="projects-info">
+			<%= render "projects" %>
+		</div>
+
+		<div class="music-info">
+			<%= render "music" %>
+		</div>
+
+		<div class="contact-info">
+			<%= render "contact" %>
+		</div>
+
+		<div class="social-info">
+			<%= render "social" %>
+		</div>
 	</div>
 </div>
