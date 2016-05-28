@@ -37,7 +37,7 @@ $off_white: #FAFAFA;
 	    cursor: pointer;
 	}
 
-	.menu-item:hover {
+	.menu-item:hover, .menu-item-hover {
 		color: $light_gray;
 	}
 

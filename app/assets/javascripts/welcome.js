@@ -1,4 +1,6 @@
 var ready = function() {
+	$("#right-content .content").append($("#right-responses .social-info").clone()).hide().fadeIn("slow");
+
 	$(".menu-item").click(function() {
 		// Clears elements within these divs.
 		$("#additional-info").children().not(".info-hr").remove();
@@ -11,23 +13,25 @@ var ready = function() {
 		$("#additional-info").append($("#left-responses ." + $object + "-info").clone());
 		$("#right-content .content").append($("#right-responses ." + $object + "-info").clone());
 
-		// // Removes the hover effect from all elements, except for the one selected.
-		// $(".menu-item").not($(this)).each(function() {
-		// 	$(this).removeClass("menu-item-hover");
-		// });
+		// Removes the hover effect from all elements, except for the one selected.
+		$(".menu-item").not($(this)).each(function() {
+			$(this).removeClass("menu-item-hover");
+		});
 
-		// // Adds the hover effect to @code($this).
-		// $(this).addClass("menu-item-hover")
+		// Adds the hover effect to @code($this).
+		$(this).addClass("menu-item-hover")
 	});
 
 	// Removes any elements in the @code(#additional-info) div.
 	$(".name").click(function() {
 		$("#additional-info").children().not(".info-hr").remove();
-	});
-
-	$(".logo").mouseleave(function() {
-		// $object = $(this).attr("id");
-		// $($object + "-color img").replaceWith($($object + " img"));
+		$("#right-content .content").children().remove();
+		$("#right-content .content").append($("#right-responses .social-info").clone());
+		
+		// Removes the hover effect from all elements, except for the one selected.
+		$(".menu-item").each(function() {
+			$(this).removeClass("menu-item-hover");
+		});
 	});
 };
 
