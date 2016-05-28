@@ -90,7 +90,8 @@ $off_white: #FAFAFA;
 		font-size: 13px;
 	}
 
-	.content, .contact-info, .contact-info .row, #contact-inner-box, .social-info, .projects-info {
+	.content, .contact-info, .contact-info .row, #contact-inner-box, .social-info, 
+	.projects-info, .about-info {
 		display: -webkit-box;
 		display:    -moz-box;
 		display:     -ms-flexbox;
@@ -101,7 +102,8 @@ $off_white: #FAFAFA;
 		@include flex-direction(column);
 	}
 
-	.content, .contact-info, .contact-info .row, .projects-info, .projects-info .all-content {
+	.content, .contact-info, .contact-info .row, .projects-info, .projects-info .all-content,
+	.about-info {
 	    min-width: 100%;
 	    min-height: 100vh;
 	}
@@ -121,6 +123,21 @@ $off_white: #FAFAFA;
 
 		#color-images {
 			display: none;
+		}
+	}
+
+	.about-info {
+		.img-content {
+			max-height: 400px;
+			max-width: 400px;
+		}
+
+		p {
+			padding: 10px 50px 0 50px;
+		}
+
+		.about-copy {
+			margin-top: 10px;
 		}
 	}
 
