@@ -1,1 +1,20 @@
-MUSIC
+<div id="music">
+	<hr> 
+	<% for i in 0..15 do %>
+		<div class="row">
+			<div class="col-sm-3 artist-name">
+				Tracy Chapman
+			</div>
+			<div class="col-sm-3 song-title">
+				Crossroads
+			</div>
+			<div class="col-sm-5 music-copy">
+				This song is on Tracy's 2015 remastered album. Crossroads details the internal conflict that results from the external pressures that try to control and navigate ones own life. Give it a listen, it's an amazing song.
+			</div>
+			<div class="col-sm-1 music-link">
+				<%= link_to image_tag("spotify.svg", alt: "Spotify Logo", title: "Spotify", class: "img-responsive", id: "spotify-logo"), "https://open.spotify.com/user/1246830624", :target => "_blank"%>
+			</div>
+		</div>
+		<hr> 
+	<% end %>
+</div>

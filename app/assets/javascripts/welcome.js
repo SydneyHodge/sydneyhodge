@@ -1,5 +1,6 @@
 var ready = function() {
-	$("#right-content .content").append($("#right-responses .social-info").clone()).hide().fadeIn("slow");
+	$("#right-content .content").append($("#right-responses .self").clone()).hide().fadeIn();
+	$("#right-content .content").append($("#right-responses .social-info").clone()).hide().fadeIn();
 
 	$(".menu-item").click(function() {
 		// Clears elements within these divs.
@@ -26,6 +27,7 @@ var ready = function() {
 	$(".name").click(function() {
 		$("#additional-info").children().not(".info-hr").remove();
 		$("#right-content .content").children().remove();
+		$("#right-content .content").append($("#right-responses .self").clone());
 		$("#right-content .content").append($("#right-responses .social-info").clone());
 		
 		// Removes the hover effect from all elements, except for the one selected.

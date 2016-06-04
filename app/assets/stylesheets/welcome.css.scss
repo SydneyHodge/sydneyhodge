@@ -91,7 +91,7 @@ $off_white: #FAFAFA;
 	}
 
 	.content, .contact-info, .contact-info .row, #contact-inner-box, .social-info, 
-	.projects-info, .about-info {
+	.projects-info, .about-info, .music-info {
 		display: -webkit-box;
 		display:    -moz-box;
 		display:     -ms-flexbox;
@@ -126,18 +126,39 @@ $off_white: #FAFAFA;
 		}
 	}
 
-	.about-info {
-		.img-content {
-			max-height: 400px;
-			max-width: 400px;
-		}
+	.self-content {
+		margin-bottom: 20px;
+	}
 
+	.img-content {
+		max-height: 400px;
+		max-width: 400px;
+	}
+
+	.about-info {
 		p {
 			padding: 10px 50px 0 50px;
 		}
 
 		.about-copy {
 			margin-top: 10px;
+		}
+	}
+
+	#music {
+		margin-right: 20px;
+		overflow-y: scroll;
+		overflow-x: hidden;
+
+		.row {
+			margin: 20px;
+		}
+
+		hr {
+			width: 100%;
+			background-color: $off_white;
+			height: 1px;
+			margin: 5px;
 		}
 	}
 
