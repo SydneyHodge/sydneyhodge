@@ -1,6 +1,7 @@
+$gray: #666666;
+$gray_black: #424242;
 $light_gray: #CECDCC;
 $off_black: #333333;
-$gray_black: #424242;
 $off_white: #FAFAFA;
 
 #left-content, #right-content {
@@ -85,13 +86,15 @@ $off_white: #FAFAFA;
 #right-content {
 	flex: 1;
 	background-color: $off_black;
+	overflow-y: scroll;
+	overflow-x: hidden;
 
 	p {
 		font-size: 13px;
 	}
 
 	.content, .contact-info, .contact-info .row, #contact-inner-box, .social-info, 
-	.projects-info, .about-info, .music-info {
+	.projects-info, .projects-info .row, #projects-outer-box, #all-projects, .about-info, .music-info {
 		display: -webkit-box;
 		display:    -moz-box;
 		display:     -ms-flexbox;
@@ -102,20 +105,10 @@ $off_white: #FAFAFA;
 		@include flex-direction(column);
 	}
 
-	.content, .contact-info, .contact-info .row, .projects-info, .projects-info .all-content,
+	.content, .contact-info, .contact-info .row, .projects-info, .projects-info .row,
 	.about-info {
 	    min-width: 100%;
 	    min-height: 100vh;
-	}
-
-	#contact-inner-box {
-		height: 30vh;
-
-		background-color: $off_white;
-		color: $off_black;
-		border-radius: 2px;
-		font-family: 'Raleway', sans-serif;
-		font-weight: bold;
 	}
 
 	.social-info {
@@ -136,6 +129,8 @@ $off_white: #FAFAFA;
 	}
 
 	.about-info {
+		margin-top: 20px;
+
 		p {
 			padding: 10px 50px 0 50px;
 		}
@@ -162,36 +157,64 @@ $off_white: #FAFAFA;
 		}
 	}
 
+	.box {
+		background-color: $off_white;
+		color: $off_black;
+		border-radius: 2px;
+		font-family: 'Raleway', sans-serif;
+	}
+
 	.projects-info {
-		.even, .odd {
-			display: -webkit-box;
-			display:    -moz-box;
-			display:     -ms-flexbox;
-			display: -webkit-flex;
-			display:         flex;
-
-			width: 100%;
+		#projects-outer-box {
+			height: 70vh;
 		}
 
-		.even {
-			flex-grow: 1;
-			background-color: white;
+		#headline {
+			height: 10%;
+			font-size: 25px;
+			margin: 20px 0 25px;
+			font-weight: bold;
 		}
 
-		.odd {
+		#all-projects {
+			justify-content: space-around;
 			flex-grow: 1;
-			background-color: gray;
+
+			.project:nth-child(odd) {	
+				// background-color: $gray;
+			}
+
+			.project:nth-child(even) {
+				// background-color: $gray_black;
+			}
+
+			.project {
+				font-size: 20px;
+
+				.title {
+					text-decoration: overline;
+				}
+
+				.project-copy {
+					margin-top: -10px;
+				}
+			}
 		}
 	}
 
 	.contact-info {
-		.email:link, .email:active, .email:hover, .email:visited {
-			text-decoration: none;
-			color: $gray_black;
-		}
+		#contact-inner-box {
+			height: 30vh;
+			font-weight: bold;
 
-		.email:hover {
-			color: $light_gray;
+			.email:link, .email:active, .email:hover, .email:visited {
+				text-decoration: none;
+				color: $gray_black;
+			}
+
+			.email:hover {
+				color: $light_gray;
+			}
 		}
 	}
 
