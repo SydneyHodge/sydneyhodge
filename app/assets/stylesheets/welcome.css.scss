@@ -184,6 +184,17 @@ $off_white: #FAFAFA;
 		}
 	}
 
+	.contact-info {
+		.email:link, .email:active, .email:hover, .email:visited {
+			text-decoration: none;
+			color: $gray_black;
+		}
+
+		.email:hover {
+			color: $light_gray;
+		}
+	}
+
 	#right-responses {
 		display: none;
 	}
