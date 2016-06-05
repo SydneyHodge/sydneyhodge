@@ -182,6 +182,10 @@ $off_white: #FAFAFA;
 		flex-grow: 1;
 	}
 
+	.title {
+		font-size: 18px;
+	}
+
 	.work-exp-info {
 		.outer-box {
 			height: auto;
@@ -199,10 +203,6 @@ $off_white: #FAFAFA;
 			text-align: left;
 			border-radius: 3px; 
 			margin-top: 5px;
-
-			.title {
-				font-size: 18px;
-			}
 
 			.right-float {
 				float: right;
@@ -230,6 +230,17 @@ $off_white: #FAFAFA;
 
 		.item-copy {
 			margin-top: -10px;
+		}
+
+		.item {
+			a:link, a:active, a:hover, a:visited {
+				text-decoration: none;
+				color: $gray_black;
+			}
+
+			a:hover {
+				color: $light_gray
+			}
 		}
 	}
 
