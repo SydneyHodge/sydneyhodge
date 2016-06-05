@@ -1,6 +1,7 @@
 var ready = function() {
 	$("#right-content .content").append($("#right-responses .self").clone()).hide().fadeIn();
 	$("#right-content .content").append($("#right-responses .social-info").clone()).hide().fadeIn();
+	$("#additional-info").append($("#left-responses .name-info").clone());
 
 	$(".menu-item").click(function() {
 		// Clears elements within these divs.
@@ -26,6 +27,7 @@ var ready = function() {
 	// Removes any elements in the @code(#additional-info) div.
 	$(".name").click(function() {
 		$("#additional-info").children().not(".info-hr").remove();
+		$("#additional-info").append($("#left-responses .name-info").clone());
 		$("#right-content .content").children().remove();
 		$("#right-content .content").append($("#right-responses .self").clone());
 		$("#right-content .content").append($("#right-responses .social-info").clone());
@@ -34,12 +36,6 @@ var ready = function() {
 		$(".menu-item").each(function() {
 			$(this).removeClass("menu-item-hover");
 		});
-	});
-
-	$(".project").mouseenter(function() {
-		alert("I COME HERE")
-		$object = $(this).attr("class").split(' ')[1];
-		alert($object)
 	});
 };
 
