@@ -35,6 +35,12 @@ var ready = function() {
 			$(this).removeClass("menu-item-hover");
 		});
 	});
+
+	$(".project").mouseenter(function() {
+		alert("I COME HERE")
+		$object = $(this).attr("class").split(' ')[1];
+		alert($object)
+	});
 };
 
 $(document).ready(ready);
