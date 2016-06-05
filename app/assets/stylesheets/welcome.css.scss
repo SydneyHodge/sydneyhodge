@@ -111,6 +111,16 @@ $off_white: #FAFAFA;
 	    min-height: 100vh;
 	}
 
+	.logo {
+		min-width: 25px;
+		// max-width: 50px;
+
+		min-height: 25px;
+		// max-width: 50px;
+
+		margin-bottom: 10px;
+	}
+
 	.social-info {
 		@include flex-direction(row);
 
@@ -155,6 +165,10 @@ $off_white: #FAFAFA;
 			height: 1px;
 			margin: 5px;
 		}
+
+		.music-copy {
+			text-align: left;
+		}
 	}
 
 	.box {
@@ -173,13 +187,14 @@ $off_white: #FAFAFA;
 	.headline {
 		height: 10%;
 		font-size: 25px;
-		margin: 20px 0;
+		margin-top: 10px;
 		font-weight: bold;
 	}
 
 	.all-content {
 		justify-content: space-around;
 		flex-grow: 1;
+		margin: 5px;
 	}
 
 	.title {
@@ -211,10 +226,6 @@ $off_white: #FAFAFA;
 			.italics {
 				font-style: italic;
 			}
-		}
-
-		.headline {
-			margin: 20px 0 -10px;
 		}
 	}
 
