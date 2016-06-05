@@ -111,14 +111,36 @@ $off_white: #FAFAFA;
 	    min-height: 100vh;
 	}
 
+	@media screen and (max-width: 766px) {
+		.logo {
+			max-height: 50px !important;
+			max-width: 50px !important;
+			margin-bottom: 10px;
+		}
+
+		.img-content {
+			margin: 60px 20px 0 20px;
+		}
+
+		.outer-box, #contact-inner-box {
+			margin: 0 20px;
+		}
+
+		.artist-name, .song-title, .music-copy, .music-link {
+			margin-bottom: 10px;
+			text-align: center !important;
+		}
+
+		.music-link {
+			img {
+				margin: 0 auto;
+			}
+		}
+	}
+
 	.logo {
 		min-width: 25px;
-		// max-width: 50px;
-
 		min-height: 25px;
-		// max-width: 50px;
-
-		margin-bottom: 10px;
 	}
 
 	.social-info {
