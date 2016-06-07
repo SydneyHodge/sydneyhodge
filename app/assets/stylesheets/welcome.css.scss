@@ -29,13 +29,14 @@ $off_white: #FAFAFA;
 		font-family: 'Amatic SC' , 'cursive';
 		font-size: 70px;
 		text-decoration: overline;
+    	cursor: pointer;
 	}
 
 	.menu-item {
 		display: inline-block;
 		font-weight: 100;
 		font-size: 18px;
-	    cursor: pointer;
+    	cursor: pointer;
 	}
 
 	.menu-item:hover, .menu-item-hover {
@@ -133,7 +134,7 @@ $off_white: #FAFAFA;
 
 		.music-link {
 			img {
-				margin: 0 auto;
+				margin: 0 auto; 
 			}
 		}
 	}
