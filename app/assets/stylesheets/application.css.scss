@@ -8,14 +8,15 @@ $light_gray: #CECDCC;
 $off_black: #333333;
 $off_white: #FAFAFA;
 $white: #FFFFFF;
+$amethyst: #9B59B6;
 
 ::selection {
-	background-color: $gray;
+	background-color: $amethyst;
 	color: $white;
 }
 
 ::-moz-selection { 
-	background-color: $gray;
+	background-color: $amethyst;
 	color: $white;
 }
 
